@@ -16,7 +16,7 @@ $value = "value_example"; // string | QR code text to convert into the QR code b
 
 try {
     $result = $apiInstance->generateBarcodeQRCode($value);
-    print_r($result);
+    print_r(base64_encode($result));
 } catch (Exception $e) {
     echo 'Exception when calling GenerateBarcodeApi->generateBarcodeQRCode: ', $e->getMessage(), PHP_EOL;
 }
